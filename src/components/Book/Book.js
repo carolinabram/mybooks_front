@@ -48,14 +48,13 @@ class Book extends Component{
                         </div>
                         <div className='col book-info'>
                             <h1><strong>{name}</strong> | {year}</h1>
-                            <span><small>Runtime: {pages}</small></span>
+                            <span><small>Paginas: {pages}</small></span>
                             <h3>Description:</h3>
                             <h3>{description}</h3>
                         </div>
                         <div className='row justify-content-md-center'>
-                            <Link className='btn btn-success boton-ver' to={`/watch/${_id}`} >WATCH</Link>
-                            <Link className='btn btn-info boton-ver' to='/books' >Go Back</Link>
-                            <Link className='btn btn-danger boton-ver' to={`/book/delete/${_id}`} >Delete</Link>
+                            <Link className='btn btn-info boton-ver' to='/books' >Regresar</Link>
+                            <Link className='btn btn-danger boton-ver' to={`/book/delete/${_id}`} >Eliminar</Link>
                         </div>
                     </div>
                 </div>

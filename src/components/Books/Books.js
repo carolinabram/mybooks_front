@@ -52,7 +52,7 @@ class Books extends Component{
 
         } else{
             return (
-                <div><h1>Loading...</h1></div>
+                <div><h1>Cargando...</h1></div>
             )
         }
     }
