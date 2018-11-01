@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import deleteBook from '../../services/deleteBook';
-import watchBook from '../../services/watchBook';
 
 class DeleteBook extends Component{
 
@@ -8,14 +7,7 @@ class DeleteBook extends Component{
         bookData:''
     }
     componentDidMount(){
-        watchBook(this.props.match.params.id).then((resp) =>{
-            console.log('didMount' + JSON.stringify(resp));
-            this.setState({
-                bookData: resp.data.data.singleBook
-            })
-        }).catch((err) => {
-            console.log(err)
-        })
+
     }
 
     deleteBook = () => {

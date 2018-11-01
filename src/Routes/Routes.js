@@ -9,7 +9,6 @@ import Privado from '../components/Privado/Privado';
 import checkToken from '../resolvers/checkToken';
 import Books from '../components/Books/Books';
 import Book from '../components/Book/Book';
-import WatchBook from '../components/WatchBook/WatchBook';
 import Profile from '../components/Profile/Profile';
 import EditProfile from '../components/Profile/EditProfile';
 import NewBook from '../components/NewBook/NewBook';
@@ -39,7 +38,6 @@ class Routes extends Component {
                     <PrivateRoute exact path='/privado' component={Privado} />
                     <PrivateRoute exact path='/books' component={Books} />
                     <PrivateRoute exact path='/book/:id' component={Book} />
-                    <PrivateRoute exact path='/watch/:id' component={WatchBook} />
                     <PrivateRoute exact path='/profile/:id' component={Profile} />
                     <PrivateRoute exact path='/profile/edit/:id' component={EditProfile} />
                     <PrivateRoute exact path='/new-book' component={NewBook} />

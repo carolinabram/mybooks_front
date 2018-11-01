@@ -13,10 +13,8 @@ class CardBook extends Component{
 
     render(){
         return(
-            <div className='card' style={{ width: '14rem' }}>
-                        <h5 className='card-title'>
-                            {this.state.book.name}
-                        </h5>
+            <div className='col-4 card' style={{ width: '14rem' }}>
+                <h5 className='card-title'>{this.state.book.name}</h5>
                 <img src={this.state.book.image} className='image-small' alt="Poster" onClick={() => this.props.redirect(this.state.book._id)}/>
                         <div className='card-body'>
                             <Rate defaultValue={parseFloat(this.state.rank)}

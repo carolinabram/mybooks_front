@@ -64,13 +64,15 @@ class Books extends Component{
 
     render(){
         return(
-            <div className='row justify-content-center'>
-                <div className='col-md-10 col-lg-8 text-center'>
-                    <h3 className='books-title'>
-                        All books
-                    </h3>
+            <div className="container">
+                <div className='row'>
+                    <div className='col-12 text-center'>
+                        <h3 className='books-title'>All books</h3>
+                    </div>
+                    <div className='col-12 text-center'>                    
+                        {this.renderBooks()}
+                    </div>
                 </div>
-                {this.renderBooks()}
             </div>
         )
     }

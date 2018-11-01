@@ -4,6 +4,7 @@ import constantes from '../const';
 
 
 export default (id) => {
+    console.log('<<<<singleBook '+ id)
     return axios({
         url:constantes.url+'graphql',
         method:'post',

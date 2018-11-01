@@ -6,7 +6,7 @@ import constantes from '../const';
 export default (data) => {
     let {id,rank} = data;
     let newRank = `{rank:${rank}}`;
-
+    console.log("<<<<<<<<<<<<<< "+id)
     return axios({
         url: constantes.url + 'graphql',
         method: 'post',
